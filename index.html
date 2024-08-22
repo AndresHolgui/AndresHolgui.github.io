@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Andres Felipe</title>
+</head>
+<body>
+    <nav class="nav_container">
+        <div class="logo">
+            <h2>Andres Felipe</h2>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><i class="fas fa-sun"></i></li>
+            </ul>
+        </div>
+        <div class="enlaces_responsive">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <section class="enlaces_mobile-container">
+        <div class="primeraParte">
+            <div class="modo-oscuro">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="cerrar_menu">
+                <i class="fas fa-x"></i>
+            </div>
+        </div>
+        <div class="segundaParte">
+            <ul class="ul_mobile">
+                <li class="items_mobile"><a href="#">inicio</a></li>
+                <li class="items_mobile"><a href="#">Sobre mi</a></li>
+                <li class="items_mobile"><a href="#">Proyectos</a></li>
+                <li class="items_mobile"><a href="#">Contactame</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="hero">      
+        <img src="undraw_male_avatar_g98d.svg" alt="">
+        <div class="TituloPrincipal"><h1> Andres Felipe, Frond End Developer </h1></div>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <span>Apacionado en el desarrollo y diseño web</span>
+    </section>
+    <section class="SobreMi">
+            <div class="imagen_curriculumn" data-aos="fade-right"">
+                <img src="undraw_certificate_re_yadi.svg" alt="">
+            </div>
+            <div class="texto_curriculumn">
+                <H2>Hola, soy Andrés Felipe Holguín Orreo</H2>
+                <div class="textoSobremi">
+                    <p class="num1">Te invito a conocer más sobre mí y mis habilidades a través de este currículum. Espero que lo encuentres interesante.</P>
+                </div>
+                <button><a href="Hoja de vida de Andres Felipe Holguin Orrego 2024.pdf" download>Descargar CV</a></button>
+            </div>
+    </section>
+    <section class="skills_section">
+        <div class="skills_head">
+            <h2>Mis <span>Skills</span></h2>
+            <p>
+                Aquí están mis habilidades para representar mi experiencia.</p>
+        </div>
+
+        <div class="skills_main"  data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="500">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>85%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>React js</p>
+                    <P>75%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Php</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="php"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>MySql</p>
+                    <P>65%</P>
+                </div>
+                <div class="bar">
+                    <span class="mysql"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <h2 class="Titulo-proyectos">Mis <span>Proyectos</span></h2>
+        <div class="proyectos-container">
+            <div class="project">
+                <div class="imagen-proyecto">
+                    <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+                </div>
+                <div class="descripcion-proyectos">
+                    <h2><a href="jaiwh18hed.github.io">TodoApp</a></h2>
+                    <p>Página web para administrar tareas, con la opción de marcarlas como completadas o eliminarlas.</p>
+                    <div class="botones-pagina">
+                        <button class="boton1">Pagina Web</button>
+                        <button class="boton2">Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+            <div class="imagen-proyecto">
+                <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+            </div>
+            <div class="descripcion-proyectos">
+                <h2><a href="jaiwh18hed.github.io">Blog Personal</a></h2>
+                <p>Blog personal donde se publica contenido relacionado con la programación de forma constante.</p>
+                <div class="botones-pagina">
+                    <button class="boton1">Pagina Web</button>
+                    <button class="boton2">Github</button>
+                </div>
+            </div>
+        </div>
+        <div class="project" >
+            <div class="imagen-proyecto">
+                <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+            </div>
+            <div class="descripcion-proyectos">
+                <h2><a href="jaiwh18hed.github.io">Clon de Spotify</a></h2>
+                <p>Clon de la aplicación de Spotify, que permite escuchar nuestra música favorita.</p>
+                <div class="botones-pagina">
+                    <button class="boton1">Pagina Web</button>
+                    <button class="boton2">Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+        <div class="proyectos-container">
+            <div class="project">
+                <div class="imagen-proyecto">
+                    <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+                </div>
+                <div class="descripcion-proyectos">
+                    <h2><a href="jaiwh18hed.github.io">Mini Juegos</a></h2>
+                    <p>Página web con una variedad de mini juegos, como la serpiente, tres en raya, entre otros.</p>
+                    <div class="botones-pagina">
+                        <button class="boton1">Pagina Web</button>
+                        <button class="boton2">Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+            <div class="imagen-proyecto">
+                <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+            </div>
+            <div class="descripcion-proyectos">
+                <h2><a href="jaiwh18hed.github.io">E-comerce</a></h2>
+                <p>Página de una tienda de ropa que permite agregar productos al carrito y realizar compras.</p>
+                <div class="botones-pagina">
+                    <button class="boton1">Pagina Web</button>
+                    <button class="boton2">Github</button>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="imagen-proyecto">
+                <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+            </div>
+            <div class="descripcion-proyectos">
+                <h2><a href="jaiwh18hed.github.io">Chat en tiempo real</a></h2>
+                <p>Plataforma de chat para comunicarse con otras personas.Plataforma de chat para comunicarse con otras personas.</p>
+                <div class="botones-pagina">
+                    <button class="boton1">Pagina Web</button>
+                    <button class="boton2">Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <div class="centrar">
+        <h2>Contactame</h2>
+    <section class="contactanos">
+        <img src="imagencorreo.png" alt="">
+        <form>
+            <input type="text" placeholder="ingresa tu nombre de usuario">
+            <input type="text" placeholder="Ingresa el correo electronico">
+            <textarea name="" id="" placeholder="ingresa tu Mensaje"></textarea>
+            <button>Enviar</button>
+        </form>
+    </section>
+</div>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                    <h2>Andres Holguin</h2>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Yo soy un desarrollador de software y</p>
+            <p>experto en crear paginas web </p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b>Andres Holguin</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
