@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es mi portafolio web donde muestro mis grandes proyectos las habilidades que domino y todo sobre mi"/>
+    <meta name="keywords" content="Andres felipe, holguin orrego, portafoleo, web, portafolio andres felipe, portafolio holguin, proyectos web"/>
+    <meta name="author" content="Andres felipe holguin orrego" />
+    <meta name="copyright" content="Andres holguin" />
+    <meta name="robots" content="index"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -20,9 +25,10 @@
         <div class="enlaces">
             <ul>
                 <li><a href="#">inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><i class="fas fa-sun"></i></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#skill">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="enlaces_responsive">
@@ -58,19 +64,19 @@
         </div>
         <span>Apacionado en el desarrollo y diseño web</span>
     </section>
-    <section class="SobreMi">
+    <section class="SobreMi" id="sobremi">
             <div class="imagen_curriculumn" data-aos="fade-right"">
                 <img src="undraw_certificate_re_yadi.svg" alt="">
             </div>
             <div class="texto_curriculumn">
-                <H2>Hola, soy Andrés Felipe Holguín Orreo</H2>
+                <H2>Hola, soy Andrés Felipe Holguín Orrego</H2>
                 <div class="textoSobremi">
                     <p class="num1">Te invito a conocer más sobre mí y mis habilidades a través de este currículum. Espero que lo encuentres interesante.</P>
                 </div>
                 <button><a href="Hoja de vida de Andres Felipe Holguin Orrego 2024.pdf" download>Descargar CV</a></button>
             </div>
     </section>
-    <section class="skills_section">
+    <section class="skills_section" id="skill">
         <div class="skills_head">
             <h2>Mis <span>Skills</span></h2>
             <p>
@@ -134,19 +140,19 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="proyectos">
         <h2 class="Titulo-proyectos">Mis <span>Proyectos</span></h2>
         <div class="proyectos-container">
             <div class="project">
                 <div class="imagen-proyecto">
-                    <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+                    <a href="TodoApp Felipe.html"><img src="proyectoTodoApp.png" alt=""></a>
                 </div>
                 <div class="descripcion-proyectos">
-                    <h2><a href="jaiwh18hed.github.io">TodoApp</a></h2>
+                    <h2><a href="TodoApp Felipe.html">TodoApp</a></h2>
                     <p>Página web para administrar tareas, con la opción de marcarlas como completadas o eliminarlas.</p>
                     <div class="botones-pagina">
-                        <button class="boton1">Pagina Web</button>
-                        <button class="boton2">Github</button>
+                        <a href="TodoApp Felipe.html"><button class="boton1">Pagina Web</button></a> 
+                        <a href="https://github.com/Jaiwh18hed/Jaiwh18hed.github.io.git"></a><button class="boton2">Github</button>
                     </div>
                 </div>
             </div>
@@ -182,7 +188,7 @@
         <div class="proyectos-container">
             <div class="project">
                 <div class="imagen-proyecto">
-                    <a href="jaiwh18hed.github.io"><img src="proyectoTodoApp.png" alt=""></a>
+                    <a href=""><img src="proyectoTodoApp.png" alt=""></a>
                 </div>
                 <div class="descripcion-proyectos">
                     <h2><a href="jaiwh18hed.github.io">Mini Juegos</a></h2>
@@ -222,14 +228,14 @@
     </div>
         </div>
     </section>
-    <div class="centrar">
+    <div class="centrar" id="contacto">
         <h2>Contactame</h2>
     <section class="contactanos">
         <img src="imagencorreo.png" alt="">
-        <form>
-            <input type="text" placeholder="ingresa tu nombre de usuario">
-            <input type="text" placeholder="Ingresa el correo electronico">
-            <textarea name="" id="" placeholder="ingresa tu Mensaje"></textarea>
+        <form action="enviar.php" method="post">
+            <input type="text" id="nombre" name="nombre" required placeholder="ingresa tu nombre de usuario">
+            <input type="email" id="correo" name="correo" required placeholder="Ingresa el correo electronico">
+            <textarea id="mensaje" name="mensaje" placeholder="ingresa tu Mensaje"></textarea>
             <button>Enviar</button>
         </form>
     </section>
