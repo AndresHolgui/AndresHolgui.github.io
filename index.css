@@ -11,6 +11,44 @@ body{
     background-color: black;
 }
 
+.dark{
+    background-color: #fff;
+    color: #000;
+}
+
+.hero{
+    animation: Entrada 1s ease 0s 1 normal forwards;
+}
+
+nav{
+    animation: EntradaNav 1s ease 0s 1 normal forwards;
+}
+
+@keyframes EntradaNav {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes Entrada {
+	0% {
+		opacity: 0;
+		transform: rotateY(70deg);
+		transform-origin: right;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: right;
+	}
+}
 .hero img{
     width: 20%;
 }
@@ -60,7 +98,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: hsl(0, 0%, 14%);
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
@@ -70,6 +108,11 @@ body{
 
 .nav_container{
     display: flex;
+}
+
+nav i:hover{
+    color: #c7254e;
+    cursor: pointer;
 }
 
 .primeraParte{
@@ -617,7 +660,7 @@ form button:hover{
     }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width: 800px){
     .contactanos{
         width: 90%;
     }
